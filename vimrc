@@ -26,13 +26,18 @@ Plug 'wojciechkepka/vim-github-dark'
 Plug 'ayu-theme/ayu-vim'
 Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdtree'
-
+"
+" Limelight plugin
+Plug 'junegunn/limelight.vim'
 
 " Markdown preview
 Plug 'skanehira/preview-markdown.vim'
 
 " Github dark theme
 colorscheme ghdark
+
+" Vim Discord Rich Presence
+Plug 'vimsence/vimsence'
 
 set termguicolors     " enable true colors support
 " let ayucolor="light"  " for light version of theme
@@ -43,6 +48,9 @@ let ayucolor="dark"   " for dark version of theme
 " Enable line numbers and tabs
 set number
 set tabstop=8 shiftwidth=8 noexpandtab
+
+" Start vim in insert mode in blank files
+au BufNewFile * startinsert
 
 " keyboard mappings and splitting mappings
 set splitbelow
@@ -57,10 +65,23 @@ nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 map <F8> :w <CR> :!gcc % -o %< && ./%< <CR>
 
+" NERDTree options
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
+
+" Airline options
 let g:airline_powerline_fonts = 1
 set laststatus=2
+
+" Python ycm
+
+let g:ycm_python_interpreter_path = '/usr/bin/python'
+let g:ycm_python_sys_path = ['', '/usr/lib/python39.zip', '/usr/lib/python3.9', '/usr/lib/python3.9/lib-dynload', '/home/lagnos/.local/lib/python3.9/site-packages', '/usr/lib/python3.9/site-packages']
+let g:ycm_extra_conf_vim_data = [
+  \  'g:ycm_python_interpreter_path',
+  \  'g:ycm_python_sys_path'
+  \]
+let g:ycm_global_ycm_extra_conf = '~/global_extra_conf.py'
 
 " Initialize plugin system
 call plug#end()
