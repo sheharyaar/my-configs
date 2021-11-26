@@ -50,6 +50,7 @@ filetype plugin on
 
 syntax on                               " syntax highlighting on
 set backspace=2                         " Enable backspace for EOL, etc.
+set is					" Enable incremental search highlighting
 
 set number                              " Enable line number
 set tabstop=8 shiftwidth=8 noexpandtab  " Enable 8 space tabs
@@ -69,6 +70,8 @@ nmap <silent> <A-Left> :wincmd h<CR>
 nmap <silent> <A-Right> :wincmd l<CR>
 map <F8> :w <CR> :!gcc % -o %< && ./%< <CR>
 
+" Press Ctrl-R to replace
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
 ":::::::::::::::::::::: Plugin Specific Configs :::::::::::::::::::::::::::::
 
 " NERDTree options
@@ -124,15 +127,18 @@ endif
  
 "set termguicolors
 let g:tokyonight_style = 'night' " available: night, storm
+let g:tokyonight_transparent_background = 0
 let g:tokyonight_enable_italic = 1
+let g:tokyonight_current_word = 'grey background'
+let g:airline_theme = "tokyonight"
 colorscheme tokyonight
 
 ">>>>>>>>>>>>>>>> One Config <<<<<<<<<<<<<<<<<<<<<<<<<
 
 "colorscheme onedark
 "colorscheme one
-"set background=dark " for the dark version
 "set background=light " for the light version
+"set background=dark " for the dark version
 
 "::::::::::::::::::::::::::::: End of Config ::::::::::::::::::::::::::::::
 
