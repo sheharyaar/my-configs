@@ -16,6 +16,7 @@ Plugin 'vimsence/vimsence'
 Plugin 'preservim/nerdtree'
 Plugin 'skanehira/preview-markdown.vim'
 Plugin 'ycm-core/YouCompleteMe'
+Plugin 'airblade/vim-gitgutter'
 
 " Color Scheme Packages
 Plugin 'ghifarit53/tokyonight-vim'
