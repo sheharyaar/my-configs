@@ -1,6 +1,6 @@
-#Setting Up Linux : XFCE
+# Setting Up Linux : XFCE
 
-###Steps
+### Steps
 
 Install okular for `pdf` bash bind
 
