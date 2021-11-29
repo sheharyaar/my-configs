@@ -1,8 +1,6 @@
-# Setting Up Linux : XFCE
+# Setting Up XFCE
 
-## Steps
-
-### Vim, Terminal and Theme
+## Vim, Terminal and Theme
 
 - Install ocs-url
 - System Appearance : `Qogir-dark`
@@ -22,9 +20,9 @@
 	- Keep the transparency to 0.92O
 	- Font used is `Pragmata Medium` , size **14**
 
-<img src="./Linux/xfce4-terminal.png" />
+<img src="./Linux/xfce4-terminal.png" width=200px height=202px />
 
-### Conky
+## Conky
 
 - For conky setup
 	- Install conky
@@ -34,7 +32,7 @@
 	- Then run conky -c path_to_todo.conf. For relative path use `./`
 
 
-### Keyboard Shortcuts
+## Keyboard Shortcuts
 
 - Terminal :
     	- Create a folder workspace in home directory for work and a storage directory from storing
@@ -53,7 +51,12 @@
 	- `thunar` -> `Ctrl + Alt + F`
 	- `thunar` -> `Windows + E`
 
-## Bash Aliases
+## Firefox
+
+- Keep default zoom level to 120%
+- Import bookmarks
+
+# Bash Aliases
 
 - fucking = sudo
 - Install okular for `pdf` bash bind
