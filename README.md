@@ -1,6 +1,8 @@
 # Setting Up Linux : XFCE
 
-### Steps
+## Steps
+
+### Vim, Terminal and Theme
 
 - Install ocs-url
 - System Appearance : `Qogir-dark`
@@ -16,18 +18,46 @@
 - Place bash rc as `~/.bashrc`
 - Place the `myxffce4theme.theme` in `/usr/share/xfce4/terminal/colorschemes/` - the default colorscheme folder for xfce4
 - Now goto preferance and choose the theme in Color Tab.
-	- Keep the transparency to 0.92
+	- Terminal options in image below
+	- Keep the transparency to 0.92O
 	- Font used is `Pragmata Medium` , size **14**
+
+<img src="./Linux/xfce4-terminal.png" />
+
+### Conky
 
 - For conky setup
 	- Install conky
 	- Place conkyrc as `~/.conkyrc`
+	- Place todo.conf in any directory and use todo.md to edit tasks
+	- Run conky -d first
+	- Then run conky -c path_to_todo.conf. For relative path use `./`
 
-- Install okular for `pdf` bash bind
 
-### Bash Aliases
+### Keyboard Shortcuts
+
+- Terminal :
+    	- Create a folder workspace in home directory for work and a storage directory from storing
+	- `xfce4-terminal --working-directory=/home/lagnos/workspace/` -> `Alt+T`
+
+- Firefox Profiles :
+	- Create two profiles work_w and work_e
+	- `firefox -P work_w` -> `Ctrl + Alt + W`
+	- `firefox -P work_e` -> `Ctrl + Alt + E`
+
+- Screenshot:
+	- `flameshot gui` -> printscreen 
+	- `flameshot gui` -> FN+(F6)??
+
+- Folder:
+	- `thunar` -> `Ctrl + Alt + F`
+	- `thunar` -> `Windows + E`
+
+## Bash Aliases
+
 - fucking = sudo
-- pdf = okular
+- Install okular for `pdf` bash bind
+	- pdf = okular
 - lh = ls -lah --color=auto
 - mk = make
 - mkc = make clean
