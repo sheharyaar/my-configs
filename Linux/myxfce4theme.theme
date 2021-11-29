@@ -1,6 +1,6 @@
 [Scheme]
 Name=My XFCE4 Theme
-ColorForeground=#A6ACCD
+ColorForeground=#ffffff
 ColorCursor#FFCC00
 ColorBackground=#292D3E
 ColorSelection=#3B4451
@@ -8,3 +8,6 @@ ColorSelectionUseDefault=FALSE
 ColorBold=#B9C0CB
 ColorBoldUseDefault=FALSE
 ColorPalette=#2E3436;#FF5370;#C3E88D;#FFCB6B;#82AAFF;#C792EA;#89DDFF;#D3D7CF;#555753;#F07178;#C3E88D;#F78C6C;#729FCF;#BB80B3;#89DDFF;#EEEEEC
+ColorSelection=#000000000000
+ColorSelectionUseDefault=FALSE
+ColorSelectionBackground=#ffffffffffff

@@ -20,7 +20,7 @@
 	- Keep the transparency to 0.92O
 	- Font used is `Pragmata Medium` , size **14**
 
-<img src="./Linux/xfce4-terminal.png" width=200px height=202px />
+<img src="./Linux/xfce4-terminal.png" width=300px height=303px />
 
 ## Conky
 
@@ -31,6 +31,7 @@
 	- Run conky -d first
 	- Then run conky -c path_to_todo.conf. For relative path use `./`
 
+:warning: TODO : todo configs
 
 ## Keyboard Shortcuts
 
