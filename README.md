@@ -43,7 +43,7 @@
 	- Create three profiles work_w, work_e and android
 	- `firefox -P work_w` -> `Ctrl + Alt + W`
 	- `firefox -P work_e` -> `Ctrl + Alt + E`
-	- - `firefox -P android` -> `Ctrl + Alt + a`
+	- `firefox -P android` -> `Ctrl + Alt + a`
 
 - Screenshot:
 	- `flameshot gui` -> printscreen 
